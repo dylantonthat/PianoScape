@@ -73,12 +73,19 @@ pianoKeys.forEach((key) =>
         }
     });
 
-    key.addEventListener("touch", () =>
-    {
-        if (sounds.hasOwnProperty(pianoKey))
-        {
-            const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
-            clickedKey.classList.remove("active");
+    // Touch event listeners
+    key.addEventListener("touchstart", (event) => {
+        event.preventDefault();
+        playSound(pianoKey);
+        const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
+        clickedKey.classList.add("active");
+    });
+
+    key.addEventListener("touchend", (event) => {
+        event.preventDefault();
+        if (sounds.hasOwnProperty(pianoKey)) {
+        const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
+        clickedKey.classList.remove("active");
         }
     });
 });
