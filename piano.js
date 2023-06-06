@@ -52,6 +52,25 @@ document.addEventListener("keyup", (event) =>
     }
 });
 
+// Touch event listeners
+document.addEventListener("touchstart", (event) =>
+{
+    event.preventDefault();
+    playSound(pianoKey);
+    
+    const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
+    clickedKey.classList.add("active");
+});
+
+document.addEventListener("touchend", (event) =>
+{
+    event.preventDefault();
+    if (sounds.hasOwnProperty(pianoKey)) {
+    const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
+    clickedKey.classList.remove("active");
+    }
+});
+
 
 // Event listener for clicking on note, use pianoKey instead of key
 pianoKeys.forEach((key) =>
@@ -77,6 +96,7 @@ pianoKeys.forEach((key) =>
     key.addEventListener("touchstart", (event) => {
         event.preventDefault();
         playSound(pianoKey);
+
         const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
         clickedKey.classList.add("active");
     });
