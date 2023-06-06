@@ -8,7 +8,7 @@ body
 
 .wrapper
 {
-  background-color: #1a1a1a;
+  background-color: #333;
   border-radius: 20px;
   width: 50rem;
   padding: 3rem;
@@ -135,7 +135,7 @@ body
 */
 input[type=checkbox]:checked + .slider
 {
-  background-color:#333;
+  background-color:#777;
 }
 
 input[type=checkbox]:checked + .slider:before
