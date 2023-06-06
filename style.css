@@ -1,0 +1,164 @@
+body
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.wrapper
+{
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  width: 50rem;
+  padding: 3rem;
+}
+
+.heading
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+/*key text*/
+.keys
+{
+  display: flex;
+  text-transform: capitalize;
+  color: darkgrey;
+  font-weight: 300;
+
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+/*white keys*/
+.keys .white
+{
+  width: 5rem;
+  height: 15rem;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+/*black keys*/
+.keys .black
+{
+  width: 3rem;
+  height: 9.6rem;
+  margin: 0 -1.5rem;
+  background: linear-gradient( #333 97%, black 3%);
+  border-radius: 7px;
+
+  z-index: 2;
+}
+
+
+/*keys when clicked or keypressed*/
+.keys .white.active
+{
+  background: skyblue;
+}
+.keys .black.active
+{
+  background: skyblue;
+}
+
+
+
+/*SHOW KEYS*/
+
+
+
+/*label*/
+.heading h1
+{
+  margin-left: 5rem;
+}
+
+
+/*switch area*/
+.switch
+{
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3rem;
+  margin: 0 3px;
+}
+
+/*place switch into area, half as much*/
+.slider
+{
+  position: absolute;
+  cursor: pointer;
+  width: 3rem;
+  height: 1.5rem;
+  margin-top: 0.9rem;
+  background-color: #cdcdcd;
+  border-radius: 30px;
+
+  transition: 0.5s;
+}
+
+
+/*so we can hide checkbox*/
+.switch input
+{
+  display: none;
+}
+
+/*ball for the slider (including its color, dimensions, and position*/
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+
+  border-radius: 50px;
+  background-color: whitesmoke;
+
+  transition: 0.5s;
+
+}
+
+/*
+  transition for when the toggle is clicked on/off
+  use type= because in index.html, <input type="checkbox" checked>
+*/
+input[type=checkbox]:checked + .slider
+{
+  background-color:#333;
+}
+
+input[type=checkbox]:checked + .slider:before
+{
+  transform: translateX(1.5rem);
+}
+
+
+
+/*key letter text*/
+.white span
+{
+  position: absolute;
+  margin-top: 13rem;
+  margin-left: 2.3rem;
+  text-align: center;
+}
+.black span
+{
+  position: absolute;
+  margin-top: 8rem;
+  margin-left: 1.1rem;
+}
+
+
+
