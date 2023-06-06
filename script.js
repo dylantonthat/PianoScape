@@ -72,6 +72,15 @@ pianoKeys.forEach((key) =>
             clickedKey.classList.remove("active");
         }
     });
+
+    key.addEventListener("touch", () =>
+    {
+        if (sounds.hasOwnProperty(pianoKey))
+        {
+            const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
+            clickedKey.classList.remove("active");
+        }
+    });
 });
 
 // Function to play a sound (Not block-scoped)
