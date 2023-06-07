@@ -302,6 +302,7 @@ input[type=checkbox]:checked + .slider:before
   .wrapper
   {
     width: 70rem;
+    height: 90vh;
   }
 
   .keys .white
