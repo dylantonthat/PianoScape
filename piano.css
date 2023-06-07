@@ -13,8 +13,8 @@ body
 }
 
 #pleaserotate-backdrop {
-  color: black;
-  background-color: white;
+  color: #fff;
+  background-color: #000;
 }
 
 .wrapper
