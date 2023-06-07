@@ -43,7 +43,7 @@ body
 /* icons (linkedin, github) */
 .footer a
 {
-  margin-left: 1rem;
+  margin-left: 0.5vw;
   color: #495057;
   text-align: center;
 }
