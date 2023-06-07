@@ -10,7 +10,7 @@
         onShow: function(){},
         forcePortrait: false,
         message: "Please Rotate Your Device",
-        subMessage: "for a prime experience",
+        subMessage: "(or click to continue)",
         allowClickBypass: false,
         onlyMobile: true,
         zIndex: 1000,
