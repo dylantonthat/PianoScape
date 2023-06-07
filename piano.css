@@ -12,6 +12,9 @@ body
   border-radius: 20px;
   width: auto;
   padding: 3rem;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .heading
@@ -334,7 +337,7 @@ input[type=checkbox]:checked + .slider:before
   }
   .footer
   {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 }
 
