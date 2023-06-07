@@ -331,6 +331,10 @@ input[type=checkbox]:checked + .slider:before
     margin-top: 8rem;
     margin-left: 1rem;
   }
+  .footer
+  {
+    padding-top: 5rem;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
