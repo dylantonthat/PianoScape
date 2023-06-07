@@ -333,7 +333,7 @@ input[type=checkbox]:checked + .slider:before
   }
   .footer
   {
-    padding-top: 2.5rem;
+    padding-top: 4rem;
   }
 }
 
