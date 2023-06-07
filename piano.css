@@ -302,7 +302,7 @@ input[type=checkbox]:checked + .slider:before
   /* Styles for screens between 992px and 1199px */
   .wrapper
   {
-    width: 70rem;
+    width: 55rem;
     height: 80vh;
   }
 
