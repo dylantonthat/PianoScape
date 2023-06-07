@@ -40,6 +40,7 @@ body
 
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 20px;
 }
 
 .heading
@@ -246,6 +247,11 @@ input[type=checkbox]:checked + .slider:before
     margin-left: 0.8rem;
   }
 
+  .footer
+  {
+    padding-top: 5vh !important;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -275,6 +281,10 @@ input[type=checkbox]:checked + .slider:before
     position: absolute;
     margin-top: 11rem;
     margin-left: 1rem;
+  }
+  .footer
+  {
+    padding-top: 13vh;
   }
 }
 
@@ -310,6 +320,10 @@ input[type=checkbox]:checked + .slider:before
 
     font-size: 25px;
   }
+  .footer
+  {
+    padding-top: 13vh;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -341,6 +355,10 @@ input[type=checkbox]:checked + .slider:before
     margin-left: 1.4rem;
 
     font-size: 20px;
+  }
+  .footer
+  {
+    padding-top: 13vh;
   }
 }
 
