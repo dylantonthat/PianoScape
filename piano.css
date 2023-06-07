@@ -7,12 +7,15 @@ body
 }
 
 
-/* style PleaseRotate prompting */
+/* PleaseRotate prompting */
+
+/* background set to black */
 #pleaserotate-graphic
 {
   fill: black;
 }
 
+/* phone gif set to white */
 #pleaserotate-graphic-path
 {
   fill: white;
@@ -24,6 +27,7 @@ body
   background-color: #000;
 }
 
+/* the rest */
 .wrapper
 {
   background-color: #333;
