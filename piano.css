@@ -60,7 +60,7 @@ body
   font-weight: bold;
   color: whitesmoke;
 
-  padding-top: 13vh;
+  padding-top: 20vh;
 }
 
 /* icons (linkedin, github) */
@@ -281,6 +281,10 @@ input[type=checkbox]:checked + .slider:before
     margin-top: 6rem;
     margin-left: 0.8rem;
   }
+  .footer
+  {
+    margin-top: 12vh;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -313,7 +317,7 @@ input[type=checkbox]:checked + .slider:before
   }
   .footer
   {
-    padding-top: 13vh;
+    padding-top: 16vh;
   }
 }
 
@@ -322,20 +326,20 @@ input[type=checkbox]:checked + .slider:before
   .keys .white
   {
     width: 5.5rem;
-    height: 20rem;
+    height: 27rem;
   }
 
   .keys .black
   {
     width: 3.5rem;
-    height: 13rem;
+    height: 17.5rem;
     margin: 0 -1.75rem;
   }
 
   .white span
   {
     position: absolute;
-    margin-top: 18rem;
+    margin-top: 24rem;
     margin-left: 2rem;
     text-align: center;
 
@@ -344,14 +348,14 @@ input[type=checkbox]:checked + .slider:before
   .black span
   {
     position: absolute;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-left: 1rem;
 
     font-size: 25px;
   }
   .footer
   {
-    padding-top: 13vh;
+    padding-top: 20vh;
   }
 }
 
