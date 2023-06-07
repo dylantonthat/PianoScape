@@ -223,7 +223,7 @@ input[type=checkbox]:checked + .slider:before
   .keys .white
   {
     width: 4rem;
-    height: 12rem;
+    height: 8rem;
   }
 
   .keys .black
@@ -259,7 +259,7 @@ input[type=checkbox]:checked + .slider:before
   .keys .white
   {
     width: 4.5rem;
-    height: 16rem;
+    height: 20rem;
   }
 
   .keys .black
