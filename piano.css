@@ -22,6 +22,32 @@ body
   color: whitesmoke;
 }
 
+.footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+/* icons (linkedin, github) */
+.footer a
+{
+  margin-left: 1rem;
+  color: #495057;
+  text-align: center;
+}
+.list-social-icons a
+{
+  color: #495057;
+}
+  .list-social-icons a:hover
+  {
+    color: #393646;
+  }
+
+
 /*key text*/
 .keys
 {
@@ -69,7 +95,6 @@ body
 
 
 /*SHOW KEYS*/
-
 
 
 /*label*/
@@ -161,8 +186,6 @@ input[type=checkbox]:checked + .slider:before
 
 
 /* Media queries */
-
-/*WORKS DO NOT TOUCH*/
 @media (min-width: 350px) and (max-width: 575px) {
   /* Styles for even smaller screens */
   .wrapper
@@ -202,8 +225,6 @@ input[type=checkbox]:checked + .slider:before
   }
 }
 
-
-/*GOOD DO NOT TOUCH*/
 @media (min-width: 576px) and (max-width: 768px) {
   /* Styles for smaller screens */
   .wrapper
@@ -240,8 +261,6 @@ input[type=checkbox]:checked + .slider:before
 
 }
 
-
-/*GOOD DO NOT TOUCH*/
 @media (min-width: 769px) and (max-width: 991px) {
   /* Styles for screens between 769px and 991px */
   .wrapper
@@ -318,6 +337,7 @@ input[type=checkbox]:checked + .slider:before
   .wrapper
   {
     width: 90rem;
+    height: 85vh;
   }
 
   .keys .white
@@ -356,7 +376,8 @@ input[type=checkbox]:checked + .slider:before
   /* Styles for screens larger than 1400px */
   .wrapper
   {
-    width: 100rem;
+    width: 150rem;
+    height: 90vh;
   }
 
   .keys .white {
@@ -386,6 +407,11 @@ input[type=checkbox]:checked + .slider:before
     margin-left: 1.4rem;
 
     font-size: 20px;
+  }
+
+  .footer
+  {
+    padding-top: 5rem;
   }
 }
 
