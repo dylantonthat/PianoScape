@@ -305,7 +305,7 @@ input[type=checkbox]:checked + .slider:before
   /* Styles for screens between 992px and 1199px */
   .wrapper
   {
-    width: 45rem;
+    width: 90vw;
     height: 70vh;
   }
 
@@ -346,7 +346,7 @@ input[type=checkbox]:checked + .slider:before
   .wrapper
   {
     width: 90rem;
-    height: 85vh;
+    height: 75vh;
   }
 
   .keys .white
@@ -386,7 +386,7 @@ input[type=checkbox]:checked + .slider:before
   .wrapper
   {
     width: 150rem;
-    height: 85vh;
+    height: 70vh;
   }
 
   .keys .white {
