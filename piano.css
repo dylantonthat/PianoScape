@@ -217,6 +217,41 @@ input[type=checkbox]:checked + .slider:before
 }
 
 
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Styles for screens between 769px and 991px */
+  .keys .white
+  {
+    width: 4rem;
+    height: 11rem;
+  }
+
+  .keys .black
+  {
+    width: 2.5rem;
+    height: 7.2rem;
+    margin: 0 -1.25rem;
+  }
+
+  .white span
+  {
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 1.7rem;
+    text-align: center;
+  }
+  .black span
+  {
+    position: absolute;
+    margin-top: 5.75rem;
+    margin-left: 0.8rem;
+  }
+
+  .footer
+  {
+    padding-top: 5vh !important;
+  }
+
+}
 
 @media (min-width: 769px) and (max-width: 991px) {
   /* Styles for screens between 769px and 991px */
@@ -246,12 +281,6 @@ input[type=checkbox]:checked + .slider:before
     margin-top: 6rem;
     margin-left: 0.8rem;
   }
-
-  .footer
-  {
-    padding-top: 5vh !important;
-  }
-
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -259,7 +288,7 @@ input[type=checkbox]:checked + .slider:before
   .keys .white
   {
     width: 4.5rem;
-    height: 10rem;
+    height: 20rem;
   }
 
   .keys .black
