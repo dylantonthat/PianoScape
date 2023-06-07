@@ -308,32 +308,32 @@ input[type=checkbox]:checked + .slider:before
   .keys .white
   {
     width: 4.5rem;
-    height: 15rem;
+    height: 20rem;
   }
 
   .keys .black
   {
     width: 3rem;
-    height: 9.75rem;
+    height: 12.75rem;
     margin: 0 -1.5rem;
   }
 
   .white span
   {
     position: absolute;
-    margin-top: 13rem;
+    margin-top: 18rem;
     margin-left: 2rem;
     text-align: center;
   }
   .black span
   {
     position: absolute;
-    margin-top: 8rem;
+    margin-top: 11rem;
     margin-left: 1rem;
   }
   .footer
   {
-    padding-top: 5rem;
+    padding-top: 0.75rem;
   }
 }
 
@@ -382,7 +382,7 @@ input[type=checkbox]:checked + .slider:before
   .wrapper
   {
     width: 150rem;
-    height: 90vh;
+    height: 85vh;
   }
 
   .keys .white {
