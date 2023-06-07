@@ -36,6 +36,8 @@ body
   justify-content: center;
   font-weight: bold;
   color: whitesmoke;
+
+  padding-top: 12vh;
 }
 
 /* icons (linkedin, github) */
@@ -317,10 +319,6 @@ input[type=checkbox]:checked + .slider:before
     margin-top: 11rem;
     margin-left: 1rem;
   }
-  .footer
-  {
-    padding-top: 6rem;
-  }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -386,11 +384,6 @@ input[type=checkbox]:checked + .slider:before
     margin-left: 1.4rem;
 
     font-size: 20px;
-  }
-
-  .footer
-  {
-    padding-top: 5rem;
   }
 }
 
