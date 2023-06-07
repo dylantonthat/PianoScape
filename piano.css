@@ -8,11 +8,18 @@ body
 
 
 /* style PleaseRotate prompting */
-#pleaserotate-graphic{
+#pleaserotate-graphic
+{
   fill: black;
 }
 
-#pleaserotate-backdrop {
+#pleaserotate-graphic-path
+{
+  fill: white;
+}
+
+#pleaserotate-backdrop
+{
   color: #fff;
   background-color: #000;
 }
