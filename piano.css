@@ -363,21 +363,21 @@ input[type=checkbox]:checked + .slider:before
   /* Styles for screens larger than 1400px */
   .keys .white
   {
-    width: 6rem;
-    height: 22rem;
+    width: 8rem;
+    height: 35rem;
   }
 
   .keys .black
   {
-    width: 4rem;
-    height: 14.3rem;
-    margin: 0 -2rem;
+    width: 5rem;
+    height: 23rem;
+    margin: 0 -2.5rem;
   }
 
   .white span
   {
     position: absolute;
-    margin-top: 20rem;
+    margin-top: 33rem;
     margin-left: 2.5rem;
     text-align: center;
 
@@ -386,7 +386,7 @@ input[type=checkbox]:checked + .slider:before
   .black span
   {
     position: absolute;
-    margin-top: 12rem;
+    margin-top: 21rem;
     margin-left: 1.4rem;
 
     font-size: 20px;
@@ -397,16 +397,6 @@ input[type=checkbox]:checked + .slider:before
   }
 }
 
-
-@media (min-width: 1920px) /* For Projectors or Higher Resolution Screens (Full HD) */
-{
-
-}
-
-@media (min-width: 3840px) /* For 4K Displays (Ultra HD) */
-{
-
-}
 
 
 
