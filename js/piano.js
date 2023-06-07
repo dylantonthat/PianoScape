@@ -98,46 +98,23 @@ function playSound(key)
     const tune = sounds[key];
     tune.currentTime = 0;
     tune.play();
-
-    // Check if audio playback is allowed on mobile devices
-    if (isMobileDevice())
-    {
-        // Play the sound in response to a user action
-        tune.play().catch((error) => {
-        // Log any errors if the sound fails to play
-        console.error("Failed to play sound:", error);
-        });
-    }
-    else
-    {
-        // For non-mobile devices, play the sound directly
-        tune.play();
-    }
 }
-
-function isMobileDevice() {
-    return (
-        typeof window.orientation !== "undefined" ||
-        navigator.userAgent.indexOf("Mobile") !== -1
-    );
-  }
-
 
 function hideKeys()
 {
     const label = document.querySelectorAll('.keys .key span');
-    label.forEach((label) =>
+    label.forEach((l) =>
     {
-        label.style.visibility = "hidden";
+        l.style.visibility = "hidden";
     })
 }
 
 function showKeys()
 {
     const label = document.querySelectorAll('.keys .key span');
-    label.forEach((label) =>
+    label.forEach((l) =>
     {
-        label.style.visibility = "visible";
+        l.style.visibility = "visible";
     })
 }
 

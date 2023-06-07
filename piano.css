@@ -6,6 +6,17 @@ body
   background-color: black;
 }
 
+
+/* style PleaseRotate prompting */
+#pleaserotate-graphic{
+  fill: black;
+}
+
+#pleaserotate-backdrop {
+  color: #fff;
+  background-color: #000;
+}
+
 .wrapper
 {
   background-color: #333;
