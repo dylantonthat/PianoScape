@@ -10,7 +10,10 @@ body
 {
   background-color: #333;
   border-radius: 20px;
-  width: auto;
+  
+  width: 90vw;
+  height: 70vh;
+
   padding: 3rem;
 
   align-items: center;
@@ -192,11 +195,6 @@ input[type=checkbox]:checked + .slider:before
 /* Media queries */
 @media (min-width: 350px) and (max-width: 575px) {
   /* Styles for even smaller screens */
-  .wrapper
-  {
-    width: 30rem;
-  }
-
   .keys .white
   {
     width: 2rem;
@@ -231,11 +229,6 @@ input[type=checkbox]:checked + .slider:before
 
 @media (min-width: 576px) and (max-width: 768px) {
   /* Styles for smaller screens */
-  .wrapper
-  {
-    width: 40rem;
-  }
-
   .keys .white
   {
     width: 3rem;
@@ -267,11 +260,6 @@ input[type=checkbox]:checked + .slider:before
 
 @media (min-width: 769px) and (max-width: 991px) {
   /* Styles for screens between 769px and 991px */
-  .wrapper
-  {
-    width: 55rem;
-  }
-
   .keys .white
   {
     width: 4rem;
@@ -303,12 +291,6 @@ input[type=checkbox]:checked + .slider:before
 
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Styles for screens between 992px and 1199px */
-  .wrapper
-  {
-    width: 85vw;
-    height: 70vh;
-  }
-
   .keys .white
   {
     width: 4.5rem;
@@ -343,12 +325,6 @@ input[type=checkbox]:checked + .slider:before
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   /* Styles for screens between 1200px and 1399px */
-  .wrapper
-  {
-    width: 90rem;
-    height: 75vh;
-  }
-
   .keys .white
   {
     width: 5.5rem;
@@ -383,12 +359,6 @@ input[type=checkbox]:checked + .slider:before
 
 @media (min-width: 1400px) {
   /* Styles for screens larger than 1400px */
-  .wrapper
-  {
-    width: 150rem;
-    height: 70vh;
-  }
-
   .keys .white {
     width: 6rem;
     height: 22rem;
