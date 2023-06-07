@@ -223,7 +223,7 @@ input[type=checkbox]:checked + .slider:before
   .keys .white
   {
     width: 4rem;
-    height: 12rem;
+    height: 5rem;
   }
 
   .keys .black
@@ -328,12 +328,14 @@ input[type=checkbox]:checked + .slider:before
 
 @media (min-width: 1400px) {
   /* Styles for screens larger than 1400px */
-  .keys .white {
+  .keys .white
+  {
     width: 6rem;
     height: 22rem;
   }
 
-  .keys .black {
+  .keys .black
+  {
     width: 4rem;
     height: 14.3rem;
     margin: 0 -2rem;
@@ -362,6 +364,16 @@ input[type=checkbox]:checked + .slider:before
   }
 }
 
+
+@media (min-width: 1920px) /* For Projectors or Higher Resolution Screens (Full HD) */
+{
+
+}
+
+@media (min-width: 3840px) /* For 4K Displays (Ultra HD) */
+{
+
+}
 
 
 
