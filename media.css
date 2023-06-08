@@ -1,0 +1,185 @@
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for screens between 769px and 991px */
+    .keys .white
+    {
+      width: 4rem;
+      height: 11rem;
+    }
+  
+    .keys .black
+    {
+      width: 2.5rem;
+      height: 7.2rem;
+      margin: 0 -1.25rem;
+    }
+  
+    .white span
+    {
+      position: absolute;
+      margin-top: 9rem;
+      margin-left: 1.7rem;
+      text-align: center;
+    }
+    .black span
+    {
+      position: absolute;
+      margin-top: 5.75rem;
+      margin-left: 0.8rem;
+    }
+  
+    .footer
+    {
+      padding-top: 5vh !important;
+    }
+  
+  }
+  
+  @media (min-width: 769px) and (max-width: 991px) {
+    /* Styles for screens between 769px and 991px */
+    .keys .white
+    {
+      width: 4rem;
+      height: 12rem;
+    }
+  
+    .keys .black
+    {
+      width: 2.5rem;
+      height: 7.75rem;
+      margin: 0 -1.25rem;
+    }
+  
+    .white span
+    {
+      position: absolute;
+      margin-top: 10.5rem;
+      margin-left: 1.7rem;
+      text-align: center;
+    }
+    .black span
+    {
+      position: absolute;
+      margin-top: 6rem;
+      margin-left: 0.8rem;
+    }
+    .footer
+    {
+      margin-top: 12vh;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for screens between 992px and 1199px */
+    .keys .white
+    {
+      width: 4.5rem;
+      height: 20rem;
+    }
+  
+    .keys .black
+    {
+      width: 3rem;
+      height: 12.75rem;
+      margin: 0 -1.5rem;
+    }
+  
+    .white span
+    {
+      position: absolute;
+      margin-top: 18rem;
+      margin-left: 2rem;
+      text-align: center;
+    }
+    .black span
+    {
+      position: absolute;
+      margin-top: 11rem;
+      margin-left: 1rem;
+    }
+    .footer
+    {
+      padding-top: 15vh;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    /* Styles for screens between 1200px and 1399px */
+    .keys .white
+    {
+      width: 5.5rem;
+      height: 27rem;
+    }
+  
+    .keys .black
+    {
+      width: 3.5rem;
+      height: 17.5rem;
+      margin: 0 -1.75rem;
+    }
+  
+    .white span
+    {
+      position: absolute;
+      margin-top: 24rem;
+      margin-left: 2rem;
+      text-align: center;
+  
+      font-size: 25px;
+    }
+    .black span
+    {
+      position: absolute;
+      margin-top: 15rem;
+      margin-left: 1rem;
+  
+      font-size: 25px;
+    }
+    .footer
+    {
+      padding-top: 20vh;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    /* Styles for screens larger than 1400px */
+    .keys .white
+    {
+      width: 8rem;
+      height: 25rem;
+    }
+  
+    .keys .black
+    {
+      width: 5rem;
+      height: 16.5rem;
+      margin: 0 -2.5rem;
+    }
+  
+    .white span
+    {
+      position: absolute;
+      margin-top: 22rem;
+      margin-left: 3rem;
+      text-align: center;
+  
+      font-size: 25px;
+    }
+    .black span
+    {
+      position: absolute;
+      margin-top: 14rem;
+      margin-left: 2rem;
+  
+      font-size: 20px;
+    }
+    .footer
+    {
+      padding-top: 10vh;
+    }
+  }
+  
+  
+  
+  
+  
+  
