@@ -393,7 +393,7 @@ input[type=checkbox]:checked + .slider:before
   }
   .footer
   {
-    padding-top: 13vh;
+    padding-top: 10vh;
   }
 }
 
