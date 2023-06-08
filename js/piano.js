@@ -1,5 +1,4 @@
 const pianoKeys = document.querySelectorAll(".keys .key");
-const audioContext = new AudioContext();
 
 // Define the sound URLs for each key in a dictionary
 const soundUrls =
@@ -24,44 +23,9 @@ const sounds = { };
 for (const key in soundUrls)
 {
     //makes new audio from tunes folder to use
-    //const tune = new Audio(soundUrls[key]);
+    const tune = new Audio(soundUrls[key]);
     sounds[key] = tune;
 }
-
-/*there is an audio object for each note called tune that is created and inserted into sounds therefore, you can play more than one note at a time*/
-
-/* Function to play a sound (Not block-scoped)
-function playWebSound(key)
-{
-    
-    const tune = sounds[key];
-    tune.currentTime = 0;
-    tune.play();
-}
-*/
-
-function playWebSound(key) {
-    const tuneUrl = sounds[key];
-    
-    // Fetch the audio file
-    fetch(tuneUrl)
-      .then(response => response.arrayBuffer())
-      .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
-      .then(audioBuffer => {
-        // Create a new AudioBufferSourceNode
-        const source = audioContext.createBufferSource();
-        source.buffer = audioBuffer;
-  
-        // Connect the source to the AudioContext's destination (output)
-        source.connect(audioContext.destination);
-  
-        // Start playing the sound
-        source.start();
-      })
-      .catch(error => console.error('Error decoding audio data:', error));
-  }
-  
-
 
 // Event listener for key, event variable for the key pressed (a, w, s, etc.)
 document.addEventListener("keydown", (event) =>
@@ -125,6 +89,16 @@ pianoKeys.forEach((key) =>
     });
 });
 
+// Function to play a sound (Not block-scoped)
+function playWebSound(key)
+{
+    /*there is an audio object for each note called tune that is created and inserted into sounds
+    therefore, you can play more than one note at a time
+    */
+    const tune = sounds[key];
+    tune.currentTime = 0;
+    tune.play();
+}
 
 function hideKeys()
 {
