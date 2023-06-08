@@ -24,7 +24,7 @@ const sounds = { };
 for (const key in soundUrls)
 {
     //makes new audio from tunes folder to use
-    const tune = new Audio(soundUrls[key]);
+    //const tune = new Audio(soundUrls[key]);
     sounds[key] = tune;
 }
 
@@ -40,21 +40,27 @@ function playWebSound(key)
 }
 */
 
-function playWebSound(key)
-{
-    const tune = sounds[key];
-    tune.currentTime = 0;
+function playWebSound(key) {
+    const tuneUrl = sounds[key];
     
-    // Create a new AudioBufferSourceNode
-    const source = audioContext.createBufferSource();
-    source.buffer = tune;
-    
-    // Connect the source to the AudioContext's destination (output)
-    source.connect(audioContext.destination);
-    
-    // Start playing the sound
-    source.start();
-}
+    // Fetch the audio file
+    fetch(tuneUrl)
+      .then(response => response.arrayBuffer())
+      .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+      .then(audioBuffer => {
+        // Create a new AudioBufferSourceNode
+        const source = audioContext.createBufferSource();
+        source.buffer = audioBuffer;
+  
+        // Connect the source to the AudioContext's destination (output)
+        source.connect(audioContext.destination);
+  
+        // Start playing the sound
+        source.start();
+      })
+      .catch(error => console.error('Error decoding audio data:', error));
+  }
+  
 
 
 // Event listener for key, event variable for the key pressed (a, w, s, etc.)
