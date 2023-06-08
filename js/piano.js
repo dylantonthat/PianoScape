@@ -1,4 +1,5 @@
 const pianoKeys = document.querySelectorAll(".keys .key");
+const audioContext = new AudioContext();
 
 // Define the sound URLs for each key in a dictionary
 const soundUrls =
@@ -27,6 +28,35 @@ for (const key in soundUrls)
     sounds[key] = tune;
 }
 
+/*there is an audio object for each note called tune that is created and inserted into sounds therefore, you can play more than one note at a time*/
+
+/* Function to play a sound (Not block-scoped)
+function playWebSound(key)
+{
+    
+    const tune = sounds[key];
+    tune.currentTime = 0;
+    tune.play();
+}
+*/
+
+function playWebSound(key)
+{
+    const tune = sounds[key];
+    tune.currentTime = 0;
+    
+    // Create a new AudioBufferSourceNode
+    const source = audioContext.createBufferSource();
+    source.buffer = tune;
+    
+    // Connect the source to the AudioContext's destination (output)
+    source.connect(audioContext.destination);
+    
+    // Start playing the sound
+    source.start();
+}
+
+
 // Event listener for key, event variable for the key pressed (a, w, s, etc.)
 document.addEventListener("keydown", (event) =>
 {
@@ -36,7 +66,7 @@ document.addEventListener("keydown", (event) =>
         // if statement used so the sound will not continue to start over and over when holding down a key
         if (!event.repeat)
         {
-            playSound(key);
+            playWebSound(key);
             const clickedKey = document.querySelector(`[data-note="${key}"]`); // getting clicked key element
             clickedKey.classList.add("active");
         }
@@ -58,7 +88,7 @@ pianoKeys.forEach((key) =>
     const pianoKey = key.dataset.note;
     key.addEventListener("mousedown", () =>
     {
-        playSound(pianoKey);
+        playWebSound(pianoKey);
         const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
         clickedKey.classList.add("active");
     });
@@ -74,7 +104,7 @@ pianoKeys.forEach((key) =>
 
     // Touch event listeners
     key.addEventListener("touchstart", (event) => {
-        playSound(pianoKey);
+        playWebSound(pianoKey);
 
         const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
         clickedKey.classList.add("active");
@@ -89,16 +119,6 @@ pianoKeys.forEach((key) =>
     });
 });
 
-// Function to play a sound (Not block-scoped)
-function playSound(key)
-{
-    /*there is an audio object for each note called tune that is created and inserted into sounds
-    therefore, you can play more than one note at a time
-    */
-    const tune = sounds[key];
-    tune.currentTime = 0;
-    tune.play();
-}
 
 function hideKeys()
 {
