@@ -364,20 +364,20 @@ input[type=checkbox]:checked + .slider:before
   .keys .white
   {
     width: 8rem;
-    height: 15rem;
+    height: 25rem;
   }
 
   .keys .black
   {
     width: 5rem;
-    height: 20rem;
+    height: 16.5rem;
     margin: 0 -2.5rem;
   }
 
   .white span
   {
     position: absolute;
-    margin-top: 27rem;
+    margin-top: 22rem;
     margin-left: 3rem;
     text-align: center;
 
@@ -386,7 +386,7 @@ input[type=checkbox]:checked + .slider:before
   .black span
   {
     position: absolute;
-    margin-top: 17rem;
+    margin-top: 14rem;
     margin-left: 2rem;
 
     font-size: 20px;
