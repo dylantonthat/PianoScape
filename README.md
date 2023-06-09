@@ -18,4 +18,9 @@ This was a UI of an online piano that the user can open in any setting and play,
 <img src="media/pianoIphone.PNG" alt="drawing" style="width:300px;"/>
 
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://...Dark.png)  |  ![](https://...Ocean.png)
+
+
 
