@@ -12,5 +12,5 @@ This was a UI of an online piano that the user can open in any setting and play,
 
 
 ## Mobile Screen in Portrait Mode:
-<img src="media/promptOrientation.gif" alt="drawing" style="width:300px;" "height:300px;"/>
+<img src="media/promptOrientation.gif" alt="drawing" style="width:300px; height:300px;"/>
 
