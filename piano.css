@@ -61,7 +61,7 @@ body
   font-weight: bold;
   color: whitesmoke;
 
-  padding-top: 20vh;
+  padding-top: 70px;
 }
 
 /* icons (linkedin, github) */
@@ -220,6 +220,19 @@ input[type=checkbox]:checked + .slider:before
 }
 
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer
+  {
+    padding-top: 7vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer
+  {
+    padding-top: 8vh;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Styles for screens between 992px and 1199px */
   .keys .white
