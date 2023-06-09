@@ -12,4 +12,4 @@ This was a UI of an online piano that the user can open in any setting and play,
 
 
 ## Mobile Screen in Portrait Mode:
-![My Image](media/promptOrientation.gif=250x250)
+![MobilePortrait](media/promptOrientation.gif =250x250)
