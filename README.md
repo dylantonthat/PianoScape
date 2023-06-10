@@ -18,6 +18,5 @@ This was a UI of an online piano that the user can open in any setting and play,
 ### Mobile View:
 <img src="media/pianoIphone.PNG" alt="drawing" style="height:300px;"/>
 
-### Laptop View:
-<img src="media/pianoLaptop.png" alt="drawing" style="height: 300px;"/>
+
 
