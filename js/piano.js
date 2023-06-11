@@ -19,6 +19,12 @@ const soundUrls =
 };
 
 // Load sounds
+
+/*sounds is a dictionary created that essentially looks just like soundUrls, but
+  instead of including the key label (a, w, s, etc.) and its file, it replaces
+  the file with an Audio object so that the sound can actually be played.
+*/
+
 const sounds = { };
 for (const key in soundUrls)
 {
