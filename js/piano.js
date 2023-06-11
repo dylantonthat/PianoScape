@@ -3,19 +3,19 @@ const pianoKeys = document.querySelectorAll(".keys .key");
 // Define the sound URLs for each key in a dictionary
 const soundUrls =
 {
-    a: "tunes/a.wav",
-    w: "tunes/w.wav",
-    s: "tunes/s.wav",
-    e: "tunes/e.wav",
-    d: "tunes/d.wav",
-    f: "tunes/f.wav",
-    t: "tunes/t.wav",
-    g: "tunes/g.wav",
-    y: "tunes/y.wav",
-    h: "tunes/h.wav",
-    u: "tunes/u.wav",
-    j: "tunes/j.wav",
-    k: "tunes/k.wav",
+    a: "tunes/a.mp3",
+    w: "tunes/w.mp3",
+    s: "tunes/s.mp3",
+    e: "tunes/e.mp3",
+    d: "tunes/d.mp3",
+    f: "tunes/f.mp3",
+    t: "tunes/t.mp3",
+    g: "tunes/g.mp3",
+    y: "tunes/y.mp3",
+    h: "tunes/h.mp3",
+    u: "tunes/u.mp3",
+    j: "tunes/j.mp3",
+    k: "tunes/k.mp3",
 };
 
 // Load sounds
