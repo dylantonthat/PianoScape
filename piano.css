@@ -97,7 +97,7 @@ body
 .keys .white
 {
   width: 8.5vw;
-  height: 50vh;
+  height: 45vh;
   background: white;
   border-radius: 5px;
   border: 1px solid black;
@@ -106,7 +106,7 @@ body
 .keys .black
 {
   width: 5.4vw;
-  height: 33vh;
+  height: 29.5vh;
   margin: 0 -1.5rem;
   background: linear-gradient( black 97%, #333 3%);
   border-radius: 7px;
@@ -118,14 +118,14 @@ body
 .white span
 {
   position: absolute;
-  margin-top: 43vh;
+  margin-top: 37vh;
   margin-left: 3.5vw;
   text-align: center;
 }
 .black span
 {
   position: absolute;
-  margin-top: 25vh;
+  margin-top: 20vh;
   margin-left: 1.1rem;
 }
 
