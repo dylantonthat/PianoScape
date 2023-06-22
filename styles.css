@@ -28,6 +28,11 @@ body
 }
 
 /* the rest */
+.heading
+{
+  font-weight: bold;
+  color: whitesmoke;
+}
 .wrapper
 {
   background-color: #333;
