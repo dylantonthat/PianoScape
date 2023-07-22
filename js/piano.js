@@ -22,7 +22,7 @@ const soundUrls =
 
 /*sounds is a dictionary created that essentially looks just like soundUrls, but
   instead of including the key label (a, w, s, etc.) and its file, it replaces
-  the file with an Audio object so that the sound can actually be played.
+  the file with an Audio object so that the sound can be rendered/played.
 */
 
 const sounds = { };
@@ -88,9 +88,10 @@ pianoKeys.forEach((key) =>
 
     key.addEventListener("touchend", (event) => {
         event.preventDefault();
-        if (sounds.hasOwnProperty(pianoKey)) {
-        const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
-        clickedKey.classList.remove("active");
+        if (sounds.hasOwnProperty(pianoKey))
+        {
+            const clickedKey = document.querySelector(`[data-note="${pianoKey}"]`);
+            clickedKey.classList.remove("active");
         }
     });
 });
@@ -129,7 +130,7 @@ const keySwitch = document.querySelector('input[type="checkbox"]');
 keySwitch.addEventListener("change", () =>
 {
     if (keySwitch.checked)
-    {showKeys();}
+        showKeys();
     else
         hideKeys();
 
